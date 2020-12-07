@@ -1,13 +1,15 @@
 import React from 'react';
 import './home.css';
-import logo from './logo.png'
+import thinkingMan from './thinkingMan.png'
+
+
 
 
 const Home = () => {
     return (
         
-        <div id="homeContainer">
-            <img src={logo}/>
+        <div>
+            <img id="thinkerImg"src={thinkingMan} alt="statue of a thinker man"/>
             <div id="home">
                 <h1>Hello Challengers!</h1>
                 <h2>Welcome to Planet Trivia </h2>
