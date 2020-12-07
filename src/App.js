@@ -1,11 +1,20 @@
 import React from 'react';
 
+
 class App extends React.Component {
+
+    handler = () =>{
+      this.props.getResult();
+    }
+
     render() {
       return (
-        <h1>Hello World!</h1>
+        <main>
+            <h1>swith for navigation to home or game</h1>
+        </main>
       )
     }
   }
+
 
   export default App;
