@@ -1,18 +1,19 @@
 import React from 'react';
-import Home from "./Pages/Home"
-
+import { Switch, Route } from 'react-router-dom';
+import { Header, Footer } from './layout';
+import { Home, Game } from './pages';
 
 class App extends React.Component {
-
-    handler = () =>{
-      this.props.getResult();
-    }
 
     render() {
       return (
         <main>
-            <h1>swith for navigation to home or game</h1>
-            <Home/>
+          <Header />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/game" component={Game} />            
+          </Switch>
+          <Footer />
         </main>
       )
     }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { getResult } from './actions';
+import { getResult } from '../../actions';
 
 class ApiForm extends React.Component{
     render() {
