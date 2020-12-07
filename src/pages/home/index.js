@@ -8,7 +8,7 @@ import thinkingMan from './thinkingMan.png'
 const Home = () => {
     return (
         
-        <div>
+        <div id="homeContainer">
             <img id="thinkerImg"src={thinkingMan} alt="statue of a thinker man"/>
             <div id="home">
                 <h1>Hello Challengers!</h1>
