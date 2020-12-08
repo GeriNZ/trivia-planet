@@ -1,14 +1,15 @@
 import React from 'react';
-import { NavBar } from '../../components';
+import NavBar from '../../components/navbar';
 
 
-const Header = () => {
-    return (
-        <>
-        <img src="../../img/logo.png" />
-        <NavBar />
-        </>
-    );
+class Header extends React.Component {
+    render(){
+        return (
+            <div>
+                <NavBar />
+            </div>
+        );
+    }
 }
 
 export default Header;
