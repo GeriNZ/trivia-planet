@@ -23,7 +23,7 @@ class ApiForm extends React.Component{
                             <option>5</option>
                             </Form.Control>
                         </Form.Group>
-                        <Form.Group controlId="exampleForm.ControlSelect1">
+                        <Form.Group controlId="exampleForm.ControlSelect2">
                             <Form.Label>Choose your favourite topic</Form.Label>
                             <Form.Control as="select">
                             <option>general knowledge 9</option>
@@ -31,7 +31,7 @@ class ApiForm extends React.Component{
                             <option>animals 27</option>
                             </Form.Control>
                         </Form.Group>
-                        <Form.Group controlId="exampleForm.ControlSelect1">
+                        <Form.Group controlId="exampleForm.ControlSelect3">
                             <Form.Label>Set your difficulty</Form.Label>
                             <Form.Control as="select">
                             <option>easy</option>
@@ -39,7 +39,7 @@ class ApiForm extends React.Component{
                             <option>hard</option>
                             </Form.Control>
                         </Form.Group>
-                        <Form.Group controlId="exampleForm.ControlSelect1">
+                        <Form.Group controlId="exampleForm.ControlSelect4">
                             <Form.Label>Select type</Form.Label>
                             <Form.Control as="select">
                             <option>True / False</option>
