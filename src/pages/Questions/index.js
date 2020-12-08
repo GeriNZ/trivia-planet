@@ -6,7 +6,10 @@ import Quiz from '../../components/Quiz';
 
 class Questions extends React.Component {
 
-    renderQuestion = () => this.props.quiz.map( (q, i) => <Quiz key={i} questions={q.question} />) 
+    renderQuestion = () => this.props.quiz.map( (q, i) => {
+    return <Quiz key={i} questions={q.question} correctAnswer={q.correct_answer} incorrectAnswers={q.incorrect_answers} players={this.props.players}/>}) 
+
+
 
     render() {
         console.log(this.props.players)
