@@ -5,11 +5,17 @@
 const numOfPlayers = num => ({
     type: 'PLAYER_NUMBER',
     payload: num
-})
+});
 
 const loadResult = (data)=>({
     type: 'LOAD_RESULT',
     payload: data
+});
+
+const createPlayer = name => ({
+    type: 'PLAYER_NAME',
+    payload: name
+
 });
 
 export const getResult = formInput =>{
@@ -21,6 +27,12 @@ export const getResult = formInput =>{
         }catch(err){
             console.log(err.message);
         }
+    }
+}
+
+export const getNames = name => {
+    return async dispatch => {
+        dispatch(createPlayer(name));
     }
 }
 
