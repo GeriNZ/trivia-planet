@@ -2,6 +2,11 @@
 //     type: 'LOADING'
 // });
 
+const numOfPlayers = num => ({
+    type: 'PLAYER_NUMBER',
+    payload: num
+})
+
 const loadResult = (data)=>({
     type: 'LOAD_RESULT',
     payload: data
@@ -9,7 +14,7 @@ const loadResult = (data)=>({
 
 export const getResult = formInput =>{
     return async dispatch =>{
-        dispatch(loading());
+        dispatch(numOfPlayers(formInput.numOfPlayers));
         try{
             const res = await fetchData(formInput);
             dispatch(loadResult(res));
