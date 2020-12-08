@@ -1,1 +1,8 @@
+<<<<<<< HEAD
 /node_modules
+/.vscode
+=======
+node_modules
+.DS_Store
+src/.DS_Store
+>>>>>>> 9ac0629318da6c8cc446c0da54eabdaf8658c231

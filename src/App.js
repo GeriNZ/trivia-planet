@@ -2,6 +2,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { Header, Footer } from './layout';
 import { Home, Game } from './pages';
+import './App.css'
 
 class App extends React.Component {
 

@@ -1,0 +1,17 @@
+.nav {
+  text-decoration: none;
+  background-color: #c0c7dc;
+  color: #252654;
+}
+
+.navBar {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 30px;
+  text-decoration: none;
+}
+
+.current {
+  background-color: #6e88bf;
+}

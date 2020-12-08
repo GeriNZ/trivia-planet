@@ -1,9 +1,12 @@
 import React from 'react';
+import ApiForm from '../../components/apiForm/index'
 
 class Game extends React.Component{
     render(){
         return(
-            <p>hello</p>
+            <>
+                <ApiForm />
+            </>
         )
     }
 }
