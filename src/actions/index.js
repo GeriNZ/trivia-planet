@@ -5,12 +5,23 @@
 const numOfPlayers = num => ({
     type: 'PLAYER_NUMBER',
     payload: num
-})
+});
 
-const loadResult = (data)=>({
+const loadResult = data =>({
     type: 'LOAD_RESULT',
     payload: data
 });
+
+const createPlayer = name => ({
+    type: 'PLAYER_NAME',
+    payload: name
+
+});
+
+const scoreIncrement = name => ({
+    type: 'SCORE_SET',
+    payload: name
+})
 
 export const getResult = formInput =>{
     return async dispatch =>{
@@ -21,6 +32,18 @@ export const getResult = formInput =>{
         }catch(err){
             console.log(err.message);
         }
+    }
+}
+
+export const getNames = name => {
+    return async dispatch => {
+        dispatch(createPlayer(name));
+    }
+}
+
+export const setScore = name => {
+    return async dispatch => {
+        dispatch(scoreIncrement(name));
     }
 }
 

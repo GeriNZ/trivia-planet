@@ -1,20 +1,24 @@
 import React from 'react';
 import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button'
+import Button from 'react-bootstrap/Button';
+import { getNames } from '../../actions';
+import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 
 class PlayerForm extends React.Component{
     
     handlePlayers = (e) =>{
         e.preventDefault();
-        console.log(e.target["exampleForm.PlayerSelect1"].value);
+        this.playerForm.forEach( input => this.props.getNames(e.target[input.props.controlId].value));
+        this.props.history.push('/game/questions')
     }
-
+    
+    playerForm = [];
 
     playerInput = (num) => {
-        const playerForm = [];
 
         for(let i =1; i <= num; i++){
-            playerForm.push(
+            this.playerForm.push(
                 <Form.Group controlId={`exampleForm.PlayerSelect${i}`} key={i}>
                     <Form.Label>Enter {i} Player</Form.Label>
                     <Form.Control type="text" as="input" />
@@ -22,7 +26,7 @@ class PlayerForm extends React.Component{
             )
         }
 
-        return playerForm;
+        return this.playerForm;
     }
 
     render() {
@@ -36,4 +40,4 @@ class PlayerForm extends React.Component{
     }
 }
 
-export default PlayerForm;
+export default connect(null, { getNames })(withRouter(PlayerForm));

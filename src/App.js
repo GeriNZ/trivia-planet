@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { Header, Footer } from './layout';
-import { Home, Game } from './pages';
+import { Home, Game, Questions } from './pages';
 import './App.css'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 
@@ -14,7 +14,8 @@ class App extends React.Component {
           <Header />
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/game" component={Game} />            
+            <Route exact path="/game" component={Game} />
+            <Route path="/game/questions" component={Questions} />            
           </Switch>
           <Footer />
         </main>

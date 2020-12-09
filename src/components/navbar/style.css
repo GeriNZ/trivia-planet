@@ -3,7 +3,10 @@
   background-color: #c0c7dc;
   color: #252654;
   border-radius: 20%;
-  margin-right: 53px;  
+  margin-right: 50px;  
+  font-family: "luckiest guy";
+  width: 60px;
+  text-align: center;
 }
 .nav1{
   text-decoration: none;
@@ -11,7 +14,9 @@
   color: #252654;
   border-radius: 20%;
   margin-right : 50px;
-
+  font-family: "luckiest guy";
+  text-align: center;
+  width: 60px;
 
 }
 
@@ -19,8 +24,9 @@
   display: flex;
   align-content: space-between;
   justify-content: space-between;
-  height: 30px;
+  height: 25px;
   text-decoration: none;
+  top: 20px;
 }
 
 .current {
