@@ -3,4 +3,11 @@
   justify-content: space-between;
   align-items: center;
   width: 97vw;
+ 
+}
+footer {
+  clear: both;
+  position: relative;
+  height: 200px;
+  margin-top: -200px;
 }
