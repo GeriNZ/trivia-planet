@@ -15,7 +15,7 @@ class Winner extends React.Component{
     displayWinner = () => {
         const sortedScore = this.sortScore();
         return sortedScore[0][0];
-    }
+    };
 
     sortScore = () => {
         const playerArr = [];
@@ -24,8 +24,6 @@ class Winner extends React.Component{
         };
         
         playerArr.sort((a, b) => b[1] - a[1]);
-
-        playerArr
         
         return playerArr;
     }
