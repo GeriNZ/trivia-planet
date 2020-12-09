@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { getResult } from '../../actions';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button'
-import PlayerForm from '../playerForm';
+import PlayerForm from '../PlayerForm';
 
 class ApiForm extends React.Component{
 
