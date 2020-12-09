@@ -30,7 +30,7 @@ class Winner extends React.Component{
 
     render() {
         return (
-            <div>
+            <div className="winnerContainer">
                 <h3>The winner is: {this.displayWinner()}</h3>
                 {this.displayScore()}
             </div>
