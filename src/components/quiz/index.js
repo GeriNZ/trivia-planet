@@ -23,14 +23,9 @@ class Quiz extends Component {
         if (e.target.value === this.props.correctAnswer){
             this.props.setScore(player)            
         }
-<<<<<<< HEAD
-        e.target.disabled = true;
-        
-=======
         this.setState({
             [player]: true
         })
->>>>>>> 76795533c369e67bd89b338a8724f1f7f79b2666
     }
     
     shuffledAnswers = this.getShuffled();
@@ -60,18 +55,10 @@ class Quiz extends Component {
     render() {
         return (
             <>
-<<<<<<< HEAD
-                <form>
-                    <h4>{this.props.questions}</h4>
-                    {this.renderButtons()}
-                    <input type="submit" value="Submit answers" />
-                </form>
-=======
                 <div>
                     <h3>{this.props.questions}</h3>
                     {this.renderPlayersAnswers()}
                 </div>
->>>>>>> 76795533c369e67bd89b338a8724f1f7f79b2666
             </>
         )
     }
