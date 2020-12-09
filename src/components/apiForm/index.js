@@ -36,9 +36,10 @@ class ApiForm extends React.Component{
                         <Form.Group controlId="exampleForm.ControlSelect2">
                             <Form.Label>Choose your favourite topic</Form.Label>
                             <Form.Control as="select">
+                            <option value="27">animals</option>
                             <option value="9">general knowledge</option>
                             <option value="18">science computers</option>
-                            <option value="27">animals</option>
+                            
                             </Form.Control>
                         </Form.Group>
                         <Form.Group controlId="exampleForm.ControlSelect3">
@@ -52,7 +53,7 @@ class ApiForm extends React.Component{
                         <Form.Group controlId="exampleForm.ControlSelect4">
                             <Form.Label>Select type</Form.Label>
                             <Form.Control as="select">
-                            <option value="boolean">True / False</option>
+                            <option value="boolean">True/False</option>
                             <option value="multiple">Multiple choice</option>
                             
                             </Form.Control>
@@ -67,7 +68,7 @@ class ApiForm extends React.Component{
                             
                             </Form.Control>
                         </Form.Group>
-                        <Button variant="primary" type="submit">Submit </Button>
+                        <Button variant="primary" type="submit">Let's play </Button>
                 </Form>
                 {this.props.numOfPlayers && <PlayerForm players={this.props.numOfPlayers}/>}
             </>
