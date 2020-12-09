@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
 
 class Winner extends React.Component{
 
@@ -33,6 +34,7 @@ class Winner extends React.Component{
             <div>
                 <h3>The winner is: {this.displayWinner()}</h3>
                 {this.displayScore()}
+                <Button>Play Again</Button>
             </div>
         );
     }

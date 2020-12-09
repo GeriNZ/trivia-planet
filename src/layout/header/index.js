@@ -10,7 +10,7 @@ class Header extends React.Component {
             <div className="header">
                 <img className="logoImg" src={logo}/>
                 <Jumbotron>
-                <h1>Trivia Planet</h1>
+                <h1>☆ Trivia Planet ☆</h1>
                 </Jumbotron>
                 <NavBar />
                 

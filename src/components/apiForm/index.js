@@ -53,7 +53,7 @@ class ApiForm extends React.Component{
                             <Form.Label>Select type</Form.Label>
                             <Form.Control as="select">
                             <option value="boolean">True / False</option>
-                            <option value="multiple">multiple</option>
+                            <option value="multiple">Multiple choice</option>
                             
                             </Form.Control>
                         </Form.Group>

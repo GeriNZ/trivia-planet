@@ -11,18 +11,13 @@ describe('tests the footer', () => {
         expect(wrapper).toExist;
     });
 
-    test('the footer names should be correct', () => {
-        const names = wrapper.find('#footerNames');
-        expect(names.text()).toEqual('Developed by Raj, Paola, Geraldine, Charan and Dragos');
-    });
-
     test('the footer copyright should be correct', () => {
         const names = wrapper.find('#footer');
-        expect(names.text()).toEqual('© Trivia Planet 2020');
+        expect(names.text()).toEqual('© Trivia Planet 2020 | Developed by Raj, Paola, Geraldine, Charan and Dragos');
     });
     
-    test('number of spans', () => {
-        const spans = wrapper.find('span');
-        expect(spans).toHaveLength(2);
+    test('number of p elements', () => {
+        const pElement = wrapper.find('p');
+        expect(pElement).toHaveLength(1);
     });
 });

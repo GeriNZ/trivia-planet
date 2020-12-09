@@ -1,28 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Bowlby+One+SC&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,600;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Nunito Sans', sans-serif;
   letter-spacing: 1px;
-  width: 97vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("./images/homePurple.jpg"); 
+  background-repeat: no-repeat;
+  color: white;
+  width: 100%;
+  height: 100%;
+  background-size: cover; 
 }
+
+main{
+  height: 100vh;
+}
+
 h1 {
   font-family: "Luckiest guy";
+  letter-spacing: 3px;
+  
+}
+
+h2 {
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  letter-spacing: 4px;
 }
 
 h3 {
-  font-family: "Luckiest guy";
-  position: relative;
-  display: inline-block;
-  font-size: 32px;
-  font-weight: 800;
-  text-transform: uppercase;
-  font-style: italic;
-  color: transparent;
-  -webkit-text-stroke-width: extra-large * 0.05;
-  -webkit-text-stroke-color: white;
-  white-space: nowrap;
-  /* text-shadow: 12px 15px green, 13px 16px pink, 14px 17px pink, 15px 18px pink,
-    16px 19px pink, 17px 20px pink, 18px 21px pink, 19px 22px pink; */
+  font-family: "Permanent Marker", cursive;
+  letter-spacing: 3px;
+
 }
+
+

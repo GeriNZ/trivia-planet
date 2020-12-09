@@ -14,7 +14,7 @@ describe('tests for header', () => {
 
     test('it contains an h1', () => {
         const h1 = wrapper.find('h1');
-        expect(h1.text()).toBe('Trivia Planet');
+        expect(h1.text()).toBe('☆ Trivia Planet ☆');
     });
 
     test('the image url is of the correct logo', () => {
