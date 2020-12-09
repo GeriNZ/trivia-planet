@@ -15,7 +15,7 @@ class Questions extends React.Component {
     return <Quiz key={i} questions={q.question} correctAnswer={q.correct_answer} incorrectAnswers={q.incorrect_answers} players={this.props.players}/>}) 
 
 
-    checkWinner = (e) =>{
+    checkWinner = e => {
         e.preventDefault();
         this.setState({questionRender: false})
     }

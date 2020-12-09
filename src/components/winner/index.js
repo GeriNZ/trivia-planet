@@ -1,4 +1,6 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 
 class Winner extends React.Component{
 
@@ -33,6 +35,7 @@ class Winner extends React.Component{
             <div className="winnerContainer">
                 <h3>The winner is: {this.displayWinner()}</h3>
                 {this.displayScore()}
+                <Button><Link to="/game">Play Again</Link></Button>
             </div>
         );
     }
