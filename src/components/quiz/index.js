@@ -48,16 +48,18 @@ class Quiz extends Component {
 
 
     renderButtons = player => {
-        let buttonsArray = this.shuffledAnswers.map((ans, i) => <button key={i} disabled={this.state[player]} onClick={(e)=>this.selectedAnswer(e, player)} value={ans}>{ans}</button>);
-            return (<div key={player} id={player}><h4>{player}</h4>{buttonsArray}</div>);
+        let buttonsArray = this.shuffledAnswers.map((ans, i) => <button className="buttonAnswer" key={i} disabled={this.state[player]} onClick={(e)=>this.selectedAnswer(e, player)} value={ans}>{ans}</button>);
+            return (<div className="singlePlayerContainer" key={player} id={player}><h4>{player}</h4>{buttonsArray}</div>);
     }
 
     render() {
         return (
             <>
-                <div>
+                <div className="questionContainer">
                     <h3>{this.props.questions}</h3>
+                    <div className="allPlayersContainer">
                     {this.renderPlayersAnswers()}
+                    </div>
                 </div>
             </>
         )
