@@ -1,4 +1,4 @@
-.nav {
+.nav, .nav1 {
   text-decoration: none;
   background-color: #c0c7dc;
   color: #252654;
@@ -6,18 +6,9 @@
   margin-right: 50px;  
   text-align: center;
   padding: 8px;
+  
 }
 
-.nav1{
-  text-decoration: none;
-  background-color: #c0c7dc;
-  color: #252654;
-  border-radius: 20%;
-  margin-right : 50px;
-  padding: 8px;
-  text-align: center;
-  width: 60px;
-}
 
 .navBar {
   display: flex;
@@ -28,7 +19,8 @@
 }
 
 .current {
-  background-color: #6e88bf;
+  background-color: #353c68;
   color: #c0c7dc;
   font-family: "luckiest guy";
+  font-size: 1.25rem;
 }
