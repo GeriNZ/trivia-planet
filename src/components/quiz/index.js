@@ -24,6 +24,7 @@ class Quiz extends Component {
             this.props.setScore('Bob')            
         }
         e.target.disabled = true;
+        
     }
     
     shuffledAnswers = this.getShuffled();
@@ -36,8 +37,8 @@ class Quiz extends Component {
         return (
             <>
                 <form>
-                <h4>{this.props.questions}</h4>
-                {this.renderButtons()}
+                    <h4>{this.props.questions}</h4>
+                    {this.renderButtons()}
                     <input type="submit" value="Submit answers" />
                 </form>
             </>
