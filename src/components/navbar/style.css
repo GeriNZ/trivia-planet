@@ -4,31 +4,31 @@
   color: #252654;
   border-radius: 20%;
   margin-right: 50px;  
-  font-family: "luckiest guy";
-  width: 60px;
   text-align: center;
+  padding: 8px;
 }
+
 .nav1{
   text-decoration: none;
   background-color: #c0c7dc;
   color: #252654;
   border-radius: 20%;
   margin-right : 50px;
-  font-family: "luckiest guy";
+  padding: 8px;
   text-align: center;
   width: 60px;
-
 }
 
 .navBar {
   display: flex;
   align-content: space-between;
   justify-content: space-between;
-  height: 25px;
   text-decoration: none;
-  top: 20px;
+  /* top: 20px; */
 }
 
 .current {
   background-color: #6e88bf;
+  color: #c0c7dc;
+  font-family: "luckiest guy";
 }
