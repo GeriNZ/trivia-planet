@@ -22,9 +22,9 @@ describe('tests the Questions', () => {
         expect(wrapper.find('Button').text()).toContain('Submit answers');
     });
 
-    // test('it renders winner component on questionRender false', () => {
-    //     wrapper.setState({questionRender: false});
-    //     wrapper.setProps({ players: { bob: 0 }})
-    //     expect(wrapper.find('Winner').props('players')).toContain({players: {bob: 0}});
-    // });
+    test('it renders winner component on questionRender false', () => {
+        wrapper.setState({questionRender: false});
+        wrapper.setProps({ players: { bob: 0 }});
+        expect(wrapper.find('Winner').props('players')).toEqual({players: {bob: 0}});
+    });
 });

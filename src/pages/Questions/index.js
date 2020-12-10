@@ -2,13 +2,15 @@ import React from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { connect } from 'react-redux';
+import { resetPlayerNum } from '../../actions'
 import Quiz from '../../components/Quiz';
 import Winner from '../../components/Winner'
 
 class Questions extends React.Component {
     
     state = {
-        questionRender: true
+        questionRender: true,
+        whichComponent: "Form"
     }
 
     renderQuestion = () => this.props.quiz.map( (q, i) => {
@@ -17,8 +19,16 @@ class Questions extends React.Component {
 
     checkWinner = e => {
         e.preventDefault();
-        this.setState({questionRender: false})
-    }
+        this.setState({
+            questionRender: false,
+            whichComponent: "Winner"
+        })
+    };
+
+    componentWillUnmount(){
+        this.setState({questionRender: true});
+        this.props.resetPlayerNum();
+    };
 
     render() {
         return ( 
@@ -41,4 +51,4 @@ const mSTP = state => ({
     quiz: state.quiz
   })
 
-export default connect(mSTP)(Questions);
+export default connect(mSTP, { resetPlayerNum })(Questions);

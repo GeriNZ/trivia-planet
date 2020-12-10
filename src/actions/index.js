@@ -23,6 +23,10 @@ const scoreIncrement = name => ({
     payload: name
 })
 
+const resetPlayer = () => ({
+    type: 'RESET_PLAYER'
+})
+
 export const getResult = formInput =>{
     return async dispatch =>{
         dispatch(numOfPlayers(formInput.numOfPlayers));
@@ -32,6 +36,12 @@ export const getResult = formInput =>{
         }catch(err){
             console.log(err.message);
         }
+    }
+}
+
+export const resetPlayerNum = () =>{
+    return async dispatch => {
+        dispatch(resetPlayer());
     }
 }
 
