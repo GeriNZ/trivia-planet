@@ -19,7 +19,7 @@ describe('Winner', () => {
 
     test('checks children components exist', () => {
         const button = component.find('Button');
-        const divContainer = component.find('div')
+        const divContainer = component.find('div');
         expect(button.exists()).toBe(true);
         expect(divContainer.exists()).toBe(true);
     });
