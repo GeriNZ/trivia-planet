@@ -25,8 +25,10 @@ describe('tests the Questions', () => {
 
     test('it renders winner component on questionRender false', () => {
         wrapper.setState({questionRender: false});
-        wrapper.setProps({ players: { bob: 0 }, resetComponent: jest.fn()});
-        expect(wrapper.find('Winner').props('players')).toEqual({players: {bob: 0}, resetComponent: jest.fn()});
+        const instance = wrapper.instance();
+        const resetComponent = jest.fn()
+        wrapper.setProps({ players: { bob: 0 }, resetComponent: instance.resetComponent});
+        expect(wrapper.find('Winner').props('players')).toEqual({players: {bob: 0}, resetComponent: instance.resetComponent});
     });
 
     test('will check the length of renderQuestion', () => {
@@ -44,9 +46,15 @@ describe('tests the Questions', () => {
 
     test('resetComponent function is called', () => {
         const instance = wrapper.instance();
+        wrapper.setState({ questionRender: false})
+        wrapper.setProps({history: []});
+        const spy = sinon.spy(instance, 'resetComponent');
+        instance.resetComponent();
         expect(wrapper.state('questionRender')).toBe(true);
-        expect(randomQuestionMock).toHaveBeenCalled();
-        
+        //console.log(wrapper.props().children.props)
+        //expect(wrapper.props.value.location.pathname).toBe('/game');
+        expect(spy.callCount).toBe(1);
+
     });
 });
 
@@ -56,8 +64,3 @@ describe('mapStateToProps', () => {
         expect(Object.keys(mSTP(stateStub)).length).toBe(3);
     });
 });
-
-
-// const wrapper = mount(<SomeComponent />);
-// wrapper.invoke('handler')();
-// expect(/* ... */);

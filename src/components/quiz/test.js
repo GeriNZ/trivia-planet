@@ -1,15 +1,20 @@
-import { shallow } from 'enzyme';
-import { expectation } from 'sinon';
-import Quiz from '.';
+import Quiz from '.'
 
-describe('Quiz', ()=>{
-    let wrapper;
+describe('Quiz test', ()=>{
+    let component, mockFunction;
 
-    beforeEach(()=> {
-        wrapper = shallow(<Quiz.WrappedComponent />);
-    });
-
-    test('It exists', ()=>{
-        expect(wrapper).toExist;
+    beforeEach(()=>{
+        mockFunction = jest.fn()
+        component = shallow(<Quiz.WrappedComponent 
+                setScore = {mockFunction}
+                correctAnswer = {"true"}
+                incorrectAnswers = {["false"]}
+                players = {{tom: 0}}
+            />);
     })
-})
+
+    test('it exists', ()=>{
+
+        expect(component).toExist;
+    });
+});

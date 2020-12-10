@@ -76,7 +76,7 @@ class ApiForm extends React.Component{
     }
 }
 
-const mSTP = (state)=>({
+export const mSTP = (state)=>({
     numOfPlayers: state.numOfPlayers,
     loading: state.loading
   })
