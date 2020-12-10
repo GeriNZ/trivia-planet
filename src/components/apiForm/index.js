@@ -2,12 +2,12 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { getResult } from '../../actions';
 import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button'
+import Button from 'react-bootstrap/Button';
 import PlayerForm from '../PlayerForm';
 
 class ApiForm extends React.Component{
 
-    handleApiform = (e) =>{
+    handleApiform = e =>{
         e.preventDefault();
         this.props.getResult({
             amount: e.target["exampleForm.ControlSelect1"].value,
@@ -68,7 +68,7 @@ class ApiForm extends React.Component{
                             
                             </Form.Control>
                         </Form.Group>
-                        <Button variant="primary" type="submit">Let's play </Button>
+                        <Button variant="primary" type="submit">Let's play</Button>
                 </Form>
                 {this.props.numOfPlayers && <PlayerForm players={this.props.numOfPlayers}/>}
             </>
