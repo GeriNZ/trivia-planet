@@ -35,7 +35,7 @@ class Winner extends React.Component{
             <div className="winnerContainer">
                 <h3>The winner is: {this.displayWinner()}</h3>
                 {this.displayScore()}
-                <Button><Link to="/game">Play Again</Link></Button>
+                <Button onClick={this.props.resetComponent}>Play Again</Button>
             </div>
         );
     }

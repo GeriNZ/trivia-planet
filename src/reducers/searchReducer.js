@@ -21,6 +21,8 @@ const searchReducer = (state = initialState, action) => {
             return {...state, players: {...state.players, [action.payload]: ++state.players[action.payload]}};
         case 'LOAD_RESULT':
             return {...state, quiz: action.payload};
+        case 'RESET_PLAYER':
+            return {...state, numOfPlayers: 0, players: {}}
         default:
             return state;
     };

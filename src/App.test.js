@@ -20,7 +20,9 @@ describe('App', () => {
         expect(switcher.exists()).toBe(true);
     });
 
-    test('number of routers', ()=>{
+    test('number of routers', () => {
+        let routerSwitch = component.find('Switch')
+        expect(routerSwitch.length).toBe(1);
         const router = component.find('Route');
         expect(router).toHaveLength(3);
     });
