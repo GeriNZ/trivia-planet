@@ -27,11 +27,12 @@ Project started with some research on trivia apps and aligning them with the giv
 The majority of the coding was done as a whole group and in smaller sub teams.
 Working code was pushed regularly to the development branch here on github.
 
-## Features
+## General Features
 
 - Welcome page with general instructions
 - Navbar with two buttons to toggle between game and welcome page
-- ### Game features:
+
+### Game Features:
   > Multiplayer game for up to four players, each one identified by a player name
 
   > Choice from three topics in both **true/false** and **multiple choice** game mode; choice of three difficulty levels
@@ -43,16 +44,22 @@ Working code was pushed regularly to the development branch here on github.
 
 | **Wins**          | **Challenges**    | 
 | -------------     |-------------      | 
-| col 3 is          | Testing           | 
-| col 2 is          | Media queries     | 
-|                   |                   |   
+| Testing coverage above minimum          | Testing           | 
+| All must haves completed in project         | Media queries     | 
+|                   | Implementing favicon in webpack                  |   
+|                   | Refresh/restarting the game             | 
+| Succeeded in shuffling responses for players| | 
 
 ## Bugs
 
-Game currently needs a hard refresh to reset options if the _Play again_ button is not used
+- Game currently needs a hard refresh to reset options if the _Play again_ button is not used
+- Players cannot have the same name as the game will not render the same name for two individuals
 
 ## Future Features
 
+- Display a tie message if there are two or more players with the same number of points
+- Include a leader board
+- Improve responsive layout for mobile devices (react native) and add functionality for smaller screens, such as    responsive navbar
 
 ## Licence
 [MIT Licence](https://opensource.org/licenses/mit-license.php)
