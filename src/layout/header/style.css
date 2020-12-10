@@ -1,6 +1,5 @@
 .header {
   display: flex;
-  /* width: 97vw; */
   align-items: center;
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.2);
@@ -8,4 +7,20 @@
 
 .logoImg {
   width: 100px;
+}
+
+@media screen and (max-width: 700px){
+      .logoImg {
+        width: 60px;
+      }
+
+      h1{
+        font-size: 1.25rem;
+      }
+}
+
+@media screen and (max-width: 550px){
+    h1{
+      font-size: 1rem;
+    }
 }
