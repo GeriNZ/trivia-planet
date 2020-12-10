@@ -2,30 +2,30 @@
 //     type: 'LOADING'
 // });
 
-const numOfPlayers = num => ({
+export const numOfPlayers = num => ({
     type: 'PLAYER_NUMBER',
     payload: num
 });
 
-const loadResult = data =>({
+export const resetPlayer = () => ({
+    type: 'RESET_PLAYER'
+})
+
+
+export const createPlayer = name => ({
+    type: 'PLAYER_NAME',
+    payload: name
+});
+
+export const scoreIncrement = name => ({
+    type: 'SCORE_SET',
+    payload: name
+});
+
+export const loadResult = data =>({
     type: 'LOAD_RESULT',
     payload: data
 });
-
-const createPlayer = name => ({
-    type: 'PLAYER_NAME',
-    payload: name
-
-});
-
-const scoreIncrement = name => ({
-    type: 'SCORE_SET',
-    payload: name
-})
-
-const resetPlayer = () => ({
-    type: 'RESET_PLAYER'
-})
 
 export const getResult = formInput =>{
     return async dispatch =>{
@@ -57,7 +57,7 @@ export const setScore = name => {
     }
 }
 
-const fetchData = async formInput => {
+export const fetchData = async formInput => {
     try{
         const res = await fetch(`https://opentdb.com/api.php?amount=${formInput.amount}&category=${formInput.category}&difficulty=${formInput.difficulty}&type=${formInput.type}`);
         const data = await res.json();
