@@ -17,7 +17,6 @@ describe('tests the Questions', () => {
     test('Form has nested Form groups and a button', () => {
         let mainForm = wrapper.find('Form');
         let formGroups = wrapper.find(Form.Group);
-        console.log(formGroups);
         let playButton = wrapper.find('Button');
         expect(mainForm.length).toBe(1);
         expect(playButton.length).toBe(1);

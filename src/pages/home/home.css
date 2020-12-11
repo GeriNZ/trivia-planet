@@ -7,8 +7,7 @@
 
 
 
-p,
-li {
+p, li {
   font-family: "Overpass", sans-serif;
 }
 
@@ -24,6 +23,13 @@ li:before {
   padding-right: 1rem;
 }
 
+#homeContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 3rem;
+}
+
 #thinkerImg {
   width: 300px;
   height: 470px;
@@ -31,14 +37,27 @@ li:before {
   border-radius: 5%;
 }
 
-#homeContainer {
-  display: flex;
-  justify-content: space-around;
-  margin: 3rem;
-}
 
 #home {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px;
+}
+
+#home > p {
+  text-align: center;
+}
+#home > h1 {
+  text-align: center;
+}
+
+@media screen and (max-width: 978px){
+
+  #homeContainer {
+    /* display: block; */
+    flex-direction: column;
+    margin: auto;
+  }
+
 }

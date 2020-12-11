@@ -7,6 +7,9 @@ configure({ adapter: new Adapter() });
 
 import sinon from 'sinon';
 
+import jestFetchMock from 'jest-fetch-mock';
+jestFetchMock.enableMocks();
+
 global.React = React;
 global.shallow = shallow;
 global.sinon = sinon;

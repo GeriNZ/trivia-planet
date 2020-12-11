@@ -12,7 +12,7 @@ const Home = () => {
             <img id="thinkerImg"src={thinkingMan} alt="statue of a thinker man"/>
             <div id="home">
                 <h1>Hello Challengers!</h1>
-                <h2>Welcome to Planet Trivia </h2>
+                <h2>Welcome to Trivia Planet</h2>
                 <p>This is a multiplayer quiz app that you can enjoy with your friends!</p>
                 <h2>How to play: </h2>
                 <p>Go to the game page and select your options:</p>

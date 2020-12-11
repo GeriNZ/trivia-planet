@@ -13,11 +13,11 @@ describe('tests the footer', () => {
 
     test('the footer copyright should be correct', () => {
         const names = wrapper.find('#footer');
-        expect(names.text()).toEqual('© Trivia Planet 2020 | Developed by Raj, Paola, Geraldine, Charan and Dragos');
+        expect(names.text()).toBe(' © Trivia Planet 2020 | Developed by Raj, Paola, Geraldine, Charan and Dragos');
     });
     
     test('number of p elements', () => {
         const pElement = wrapper.find('p');
-        expect(pElement).toHaveLength(1);
+        expect(pElement).toHaveLength(2);
     });
 });
