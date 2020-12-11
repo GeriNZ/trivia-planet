@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass&family=Permanent+Marker&display=swap");
+
+
+
+/*"https://images.unsplash.com/photo-1531700910244-05f8c922877b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"*/
+
+
+
+
+p, li {
+  font-family: "Overpass", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+li:before {
+  content: "✓ ";
+  padding-right: 1rem;
+}
+
+#homeContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 3rem;
+}
+
+#thinkerImg {
+  width: 300px;
+  height: 470px;
+  border: 1rem solid white;
+  border-radius: 5%;
+}
+
+
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+#home > p {
+  text-align: center;
+}
+#home > h1 {
+  text-align: center;
+}
+
+@media screen and (max-width: 978px){
+
+  #homeContainer {
+    /* display: block; */
+    flex-direction: column;
+    margin: auto;
+  }
+
+}

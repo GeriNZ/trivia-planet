@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Bowlby+One+SC&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,600;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root{
+
+  --questionContBkg: rgba(37, 38, 84, 0.8)
+
+}
+
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  letter-spacing: 1px;
+  background-image: url("./images/homePurple.jpg"); 
+  color: white;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover; 
+  position: relative;
+}
+
+
+
+h1 {
+  font-family: "Luckiest guy";
+  letter-spacing: 3px;
+  
+}
+
+h2 {
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+h3 {
+  font-family: "Permanent Marker", cursive;
+  letter-spacing: 3px;
+
+}
+
+/* general form setting using bootstrap classes */
+
+form{
+  width: 100%;
+  margin: 100px auto; 
+  text-align:center;
+  display: grid;
+}
+.form-group{
+  padding: 10px;
+  margin: auto;
+  width:50%;
+  /* border: 0.5em solid yellow; */
+
+}
+.btn{
+  width: 48%;
+  border-radius: 20px;
+  margin: 30px auto;
+  align-self: center;
+  background-color: #6e88bf;
+  font-family: "luckiest guy";
+  cursor: pointer;
+  color: #252654;
+  font-size: 1.3rem;
+}
+
+.form-control{
+  float: right;
+  width: 100px;
+}
+
+.questionContainer{
+  background-color: var(--questionContBkg);
+  border-radius: 5%;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.allPlayersContainer{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.singlePlayerContainer{
+   border: 0.2em solid #6e88bf;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   padding: 15px;
+}
+.buttonAnswer{
+ min-width: 200px;
+ margin: 5px auto;
+ padding: 5px;
+ cursor: pointer;
+ color: #252654;
+}
+
+.winnerContainer {
+  width: 50%;
+  margin: 100px auto;
+  background-color: var(--questionContBkg);
+  display: grid;
+  text-align: center;
+}
+
+.winnerContainer h3 {
+  
+  font-size: 3rem;
+}
+
+

@@ -1,0 +1,27 @@
+.footerContainer {
+  position: absolute;
+  text-align: center;
+  width: 100vw;
+  bottom: -100px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#footerSmallDev{
+  display: none;
+}
+
+@media screen and (max-width: 650px){
+  #footerSmallDev{
+    display: block;
+  }
+
+  #footer{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px){
+  #footerSmallDev{
+    font-size: smaller;
+  }
+}

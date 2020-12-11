@@ -1,0 +1,35 @@
+.nav, .nav1 {
+  text-decoration: none;
+  background-color: #c0c7dc;
+  color: #252654;
+  border-radius: 20%;
+  margin-right: 50px;  
+  text-align: center;
+  padding: 8px;
+  
+}
+
+
+.navBar {
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.current {
+  background-color: #353c68;
+  color: #c0c7dc;
+  font-family: "luckiest guy";
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 550px){
+  .nav, .nav1  {
+    font-size: 0.75rem;
+  }
+
+  .current {
+    font-size: 1rem;
+  }
+}

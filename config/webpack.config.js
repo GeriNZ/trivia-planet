@@ -8,16 +8,13 @@ const config = {
   entry: [path.resolve(__dirname, '../src/index.js')], // the main JavaScript file of the project
   output: {
     // instructions for compiling the code
-    path: path.resolve(__dirname, './dist'), // the file where the compiled code should go
+    path: path.resolve(__dirname, '../dist'), // the file where the compiled code should go
     filename: 'bundle.js', // the file name of the compiled code
     publicPath: '/', // specifies the base path for all the assets within your application.
   },
   mode: 'development', // tells webpack to use its built-in optimizations according to the mode
   resolve: {
     // instructions on how to resolve modules
-    alias: {
-      'path-to-regexp': path.resolve(__dirname, 'node_modules', 'react-router', 'node_modules', 'path-to-regexp')
-    },
     modules: [path.resolve('node_modules'), 'node_modules'], // tells webpack where to look for node_modules
   },
   performance: {
