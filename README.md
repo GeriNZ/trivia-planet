@@ -20,7 +20,7 @@ To start the app, use `npm start`
 - Navbar with two buttons to toggle between game and welcome page
 - ### Game features:
 
-  Multiplayer game for up to four players, each one identified by a player name
+  > Multiplayer game for up to four players, each one identified by a player name
 
   ...- Choice from three topics in both **true/false** and **multiple choice** game mode; choice of three difficulty levels
 
