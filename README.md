@@ -6,6 +6,8 @@ A local multiplayer trivia game! Play with up to four people to test your trivia
 
 ![planetTrivia](https://github.com/rajtandel21/trivia-planet/blob/development/src/images/triviaplanet.gif)
 
+To visit the website click [here](https://trivia-planet.netlify.app)
+
 ## To use
 
 Clone down the repo and `npm install` to download the packages
